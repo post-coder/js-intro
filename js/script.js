@@ -21,10 +21,10 @@ document.writeln("Prova di foglio di script esterno");
 // e possiamo cambiarlo, utilizzando l'assegnazione
 // " = "
 
-document.getElementById("title").innerHTML = "Pagina di Gabriel Spanu";
+// document.getElementById("title").innerHTML = "Pagina di Gabriel Spanu";
 
 // modificare il contenuto del secondo titolo
-document.getElementById("dueparole_0").innerHTML = "nuovo contenuto<br>ciao<small>testo piccolino</small>";
+document.getElementById("title").innerHTML = "nuovo contenuto<br><small>testo piccolino a capo</small>";
 
 // un alert che visualizza il testo dentro il mio titolo
-alert( document.getElementById("title").innerHTML );
+alert( document.getElementById("title").innerText);
