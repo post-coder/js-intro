@@ -1,17 +1,38 @@
-// const nome = "Silvia";
+// per accedere al contenuto di questa pagina dobbiamo verificare
+// che l'utente sia maggiorenne
+// in base all'anno di nascita dell'utente
 
-// document.getElementById("title").innerHTML = "Ciao " + nome + "!";
+// come possiamo scrivere in pagina l'età dell'utente?
 
-// // possiamo eseguire la stessa istruzione utilizzando il "template literal",
-// // ovvero
-// document.getElementById("title").innerHTML = `Ciao ${nome}!`;
+// gli possiamo chiedere soltanto il suo anno di nascita
 
-// // let age = 24;
+/*
+Calcolare l'età dell'utente in base all'anno di nascita
 
-// // document.getElementById("strong").innerHTML = age;
+- chiediamo l'anno di nascita
+- memorizziamo l'anno in una variabile
+- dichiariamo una variabile "age"
+- sottrarre l'anno corrente - variabile memorizzata
+- scrivere nel documento l'età calcolata
+
+*/
+
+let year;
+year = prompt("In quale anno sei nato?");
+
+// year = Number(year);
+
+let age;
 
 
-// document.getElementById("strong").innerHTML = prova;
-let pippo = prompt("Come ti chiami?");
+age = 2024 - year;
 
-document.getElementById("title").innerHTML = `Ciao ${pippo}!`;
+// per sapere di nascosto il valore delle nostre variabili possiamo usare il log
+console.log(year);
+console.log(age);
+
+
+document.getElementById("title").innerHTML = 
+    `Sei del ${year}, <br>
+    Hai ${age} anni.`
+;
